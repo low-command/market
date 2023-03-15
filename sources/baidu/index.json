@@ -1,0 +1,10 @@
+{
+  "cmdId": "baidu",
+  "author": "wushanchao",
+  "cmdName": "百度",
+  "url": "https://www.baidu.com",
+  "callback": "function callback(cmdObj) {\n  const cmdArgObj = cmdObj.cmdArgObj; \n  $body.find('#kw').val(cmdArgObj['keyword']);\n  $body.find('#su').click();\n}",
+  "argList": [{ "list": [], "argName": "keyword" }],
+  "version": "0.1",
+  "description": ""
+}
